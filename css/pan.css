@@ -5,7 +5,8 @@
 	font-size:1.5625vw;
 	font-family:"microsoft yahei";
 }
-html,body{
+html,
+body{
 	height:100%;
 	overflow:hidden;
 }
@@ -39,54 +40,33 @@ html,body{
 }
 .music>img.play{
 	-webkit-animation:music_disc 4s linear infinite;
-	-o-animation:music_disc 4s linear infinite;
 	animation:music_disc 4s linear infinite;
 }
 @-webkit-keyframes music_disc{
 	0%{
 		-webkit-transform:rotate(0deg);
-		-ms-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
 		transform:rotate(0deg);
 	}
 	100%{
 		-webkit-transform:rotate(360deg);
-		-ms-transform:rotate(360deg);
-		-o-transform:rotate(360deg);
-		transform:rotate(360deg);
-	}
-}
-@-o-keyframes music_disc{
-	0%{
-		-webkit-transform:rotate(0deg);
-		-ms-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
-		transform:rotate(0deg);
-	}
-	100%{
-		-webkit-transform:rotate(360deg);
-		-ms-transform:rotate(360deg);
-		-o-transform:rotate(360deg);
 		transform:rotate(360deg);
 	}
 }
 @keyframes music_disc{
 	0%{
 		-webkit-transform:rotate(0deg);
-		-ms-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
 		transform:rotate(0deg);
 	}
 	100%{
 		-webkit-transform:rotate(360deg);
-		-ms-transform:rotate(360deg);
-		-o-transform:rotate(360deg);
 		transform:rotate(360deg);
 	}
 }
 /* page bg */
 .page{
-	height:100%
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 .page>.bg{
 	position:absolute;
@@ -148,8 +128,6 @@ html,body{
 @-webkit-keyframes p1_lantern{
 	0%{opacity:0.5;
 		-webkit-transform:scale(.8,.8);
-		-ms-transform:scale(.8,.8);
-		-o-transform:scale(.8,.8);
 		transform:scale(.8,.8);
 	}
 	100%{opacity:1;}
@@ -157,8 +135,6 @@ html,body{
 @keyframes p1_lantern{
 	0%{opacity:0.5;
 		-webkit-transform:scale(.8,.8);
-		-ms-transform:scale(.8,.8);
-		-o-transform:scale(.8,.8);
 		transform:scale(.8,.8);
 	}
 	100%{opacity:1;}
@@ -192,11 +168,13 @@ html,body{
 }
 #page2.fadeOut{opacity:.3
 	-webkit-transform:translate(0,-100%);
+	-ms-transform:translate(0,-100%);
 	transform:translate(0,-100%);
 }
-#page2>.p2_bg_loading{ z-index:4; background:#ef1639;
+#page2>.p2_bg_loading{ 
+	z-index:4; 
+	background:#ef1639;
 	-webkit-animation:p2_bg_loading 1s linear forwaeds;
-	-o-animation:p2_bg_loading 1s linear forwaeds;
 	animation:p2_bg_loading 1s linear forwaeds;
 }
 -webkit-@keyframes p2_bg_loading{
@@ -224,34 +202,25 @@ html,body{
 	width:59.375vw;
 	height:59.375vw;
 	-webkit-animation:p2_circle_outer 1s linear 3s infinite;
-	-o-animation:p2_circle_outer 1s linear 3s infinite;
 	animation:p2_circle_outer 1s linear 3s infinite;
 }
 @-webkit-keyframes p2_circle_outer{
 	0%{
 		-webkit-transform:rotate(0deg);
-		-ms-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
 		transform:rotate(0deg);
 	}
 	100%{
 		-webkit-transform:rotate(-360deg);
-		-ms-transform:rotate(-360deg);
-		-o-transform:rotate(-360deg);
 		transform:rotate(-360deg);
 	}
 }
 @keyframes p2_circle_outer{
 	0%{
 		-webkit-transform:rotate(0deg);
-		-ms-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
 		transform:rotate(0deg);
 	}
 	100%{
 		-webkit-transform:rotate(-360deg);
-		-ms-transform:rotate(-360deg);
-		-o-transform:rotate(-360deg);
 		transform:rotate(-360deg);
 	}
 }
@@ -269,7 +238,6 @@ html,body{
 	width:45.625vw;
 	height:45.625vw;
 	-webkit-animation:p2_circle_middle 1s linear 2s infinite;
-	-o-animation:p2_circle_middle 1s linear 2s infinite;
 	animation:p2_circle_middle 1s linear 2s infinite;
 }
 @-webkit-keyframes p2_circle_middle{
@@ -314,34 +282,25 @@ html,body{
 	width:39.9375vw;
 	height:39.9375vw;
 	-webkit-animation:p2_circle_inner 1s linear 1s infinite;
-	-o-animation:p2_circle_inner 1s linear 1s infinite;
 	animation:p2_circle_inner 1s linear 1s infinite;
 }
 @-webkit-keyframes p2_circle_inner{
 	0%{
 		-webkit-transform:rotate(0deg);
-		-ms-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
 		transform:rotate(0deg);
 	}
 	100%{
 		-webkit-transform:rotate(-1080deg);
-		-ms-transform:rotate(-1080deg);
-		-o-transform:rotate(-1080deg);
 		transform:rotate(-1080deg);
 	}
 }
 @keyframes p2_circle_inner{
 	0%{
 		-webkit-transform:rotate(0deg);
-		-ms-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
 		transform:rotate(0deg);
 	}
 	100%{
 		-webkit-transform:rotate(-1080deg);
-		-ms-transform:rotate(-1080deg);
-		-o-transform:rotate(-1080deg);
 		transform:rotate(-1080deg);
 	}
 }
@@ -366,8 +325,6 @@ html,body{
 }
 #page3.fadeIn{
 	-webkit-transform:translate(0,-100%);
-	-ms-transform:translate(0,-100%);
-	-o-transform:translate(0,-100%);
 	transform:translate(0,-100%);
 }
 #page3>.bg{
@@ -413,6 +370,26 @@ html,body{
 	right:3.75vw;
 	background:url("../img/p3_couplet_first.png") no-repeat center center;
 	background-size:100%;
+	-webkit-animation: first 1s linear infinite alternate;
+	        animation: first 1s linear infinite alternate;
+}
+@-webkit-keyframes first {
+	0% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	100%{
+
+	}
+}
+@keyframes first {
+	0% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	100%{
+
+	}
 }
 #page3>.p3_blessing{
 	width:32vw;
@@ -426,34 +403,25 @@ html,body{
 	background:url("../img/p3_blessing.png") no-repeat center center;
 	background-size:100%;
 	-webkit-animation:p3_blessing 2s linear infinite;
-	-o-animation:p3_blessing 2s linear infinite;
 	animation:p3_blessing 2s linear infinite;
 }
 @-webkit-keyframes p3_blessing{
 	0%{
 		-webkit-transform:rotate(0deg);
-		-ms-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
 		transform:rotate(0deg);
 	}
 	100%{
 		-webkit-transform:rotate(360deg);
-		-ms-transform:rotate(360deg);
-		-o-transform:rotate(360deg);
 		transform:rotate(360deg);
 	}
 }
 @keyframes p3_blessing{
 	0%{
 		-webkit-transform:rotate(0deg);
-		-ms-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
 		transform:rotate(0deg);
 	}
 	100%{
 		-webkit-transform:rotate(360deg);
-		-ms-transform:rotate(360deg);
-		-o-transform:rotate(360deg);
 		transform:rotate(360deg);
 	}
 }
