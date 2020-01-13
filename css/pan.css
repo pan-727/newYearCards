@@ -361,6 +361,8 @@ body{
 	left:3.75vw;
 	background:url("../img/p3_couplet_second.png") no-repeat center center;
 	background-size:100%;
+	-webkit-animation: first 1s linear infinite alternate;
+	        animation: first 1s linear infinite alternate;
 }
 #page3>.p3_first{
 	width:22.8125vw;
