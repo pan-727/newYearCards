@@ -17,12 +17,12 @@ window.onload=function(){
 			this.setAttribute("class","play");
 			
 		}else{
-			dudio.pause();
+			audio.pause();
 			this.setAttribute("class","");
 		};
 	},false);
 	
-	page1.addEventListener("touchstart",funtion(event){
+	page1.addEventListener("touchstart",function(event){
 		page1.style.display="none";
 		page2.style.display="block";
 		page3.style.display="block";
