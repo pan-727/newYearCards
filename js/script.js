@@ -7,7 +7,7 @@ window.onload=function(){
 	var music=document.getElenebtById(music);
 	var audio=document.getElementsByTagName("audio")[0];
 	
-	audio.addEventListener("ended"，function(event){
+	audio.addEventListener("ended",function(event){
 		music.setAttribute("class","");
 	},false);
 	
